@@ -103,7 +103,7 @@ button:active {
 }
 
 .peliculaInformacion{
-    width: 21rem;
+    width: 25rem;
 }
 
 .peliculaInformacion ul {
@@ -114,7 +114,7 @@ button:active {
 
 .peliculaInformacion ul li {
     list-style: none;
-    margin-right: 10px;
+    margin: 0 10px;
     font-size: 14px;
     display: flex;
     justify-content: space-between;
@@ -128,7 +128,7 @@ button:active {
 }
 
 .peliculaInformacion ul li p{
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .peliculaInformacion ul li details {
@@ -160,17 +160,50 @@ button:active {
     text-align: center;
 }
 
+@media (max-width: 496px) {
+    .peliculaInformacion{
+        width: 24rem;
+    }
+}
+
+@media (max-width: 477px) {
+    .peliculaInformacion{
+        width: 23rem;
+    }
+
+}
+
+@media (max-width: 470px) {
+    .peliculaInformacion{
+        width: 22rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .peliculaInformacion{
+        width: 21rem;
+    }
+}
+
 @media (max-width: 450px) {
     .peliculaInformacion{
         width: 20rem;
     }
     .peliculaInformacion ul li{
-        margin-right: 0;
+        margin: 0 10px;
+    }
+
+    .peliculaInformacion ul li span{
+        padding: 0 0 0 0.5rem;
     }
 
     .peliculaInformacion ul li p{
         padding: 0 0.5rem;
         text-align: right;
+    }
+
+    .peliculaInformacion ul li details summary{
+        padding: 0 0 0 0.5rem;
     }
 }
 
