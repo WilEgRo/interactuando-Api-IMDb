@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Buscador de películas con información detallada." />
+    <meta name="keywords" content="películas, buscador, información, cine" />
+    <meta name="author" content="Wilson Eguez Rojas" />
+    <link rel="icon" href="recursos/television.png" type="image/png" sizes="16x16" />
+    <title>MovieScope</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="movieScope-contenedor">
+        <div class="headerMovieScope">
+            <h1>MovieScope</h1>
+            <form id="busqueda">
+                <input type="text" id="inputPelicula" placeholder="Escribe el nombre de una película..." />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <div id="carga" class="carga" style="display: none;">Buscando película...</div>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
